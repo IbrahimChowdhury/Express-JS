@@ -59,7 +59,7 @@ const storage = multer.diskStorage({
 
 
 //   uploading file
-app.post("/upload",upload.single("file"),  async(req,res)=>{
+app.post("/upload",upload.single(""),  async(req,res)=>{
 try {
     let user= users_model({
         name: req.body.name,

@@ -12,7 +12,7 @@ app.use(user_router)
 
 
 
-/
+
 // server 
 app.get("/",(req,res)=>{
    res.sendFile(__dirname + "/view/home_page.html")

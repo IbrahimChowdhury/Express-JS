@@ -2,7 +2,7 @@ let User=require("../model/user_model")
 let {v4 : uuidv4}=require("uuid")
 
 // getting all items 
-let getAllUsers =async(req,res)=>{ 
+let getAllUsers = async(req,res)=>{ 
     try {
         let allUser =await User.find()
         if (allUser) {
